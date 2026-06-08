@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFontes - Preservação de Rios e Nascentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <span aria-hidden="true">💧</span> EcoFontes
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                ☰
+            </button>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#monitoramento">Monitoramento</a></li>
+                    <li><a href="#como-ajudar">Como Ajudar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h1>Proteja Nossas Fontes de Vida</h1>
+                <p>A preservação dos rios e nascentes é fundamental para o futuro do nosso planeta. Conheça, monitore e faça a sua parte.</p>
+                <a href="#como-ajudar" class="btn-primary">Como Ajudar</a>
+            </div>
+        </section>
+
+        <section id="importancia" class="info-section">
+            <h2>Por que preservar?</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Nascente de água limpa brotando entre pedras e musgo">
+                    <h3>Biodiversidade</h3>
+                    <p>Rios saudáveis abrigam milhares de espécies de plantas e animais fundamentais para o equilíbrio ecológico.</p>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1508873696983-2df5198e4009?auto=format&fit=crop&w=600&q=80" alt="Pessoa coletando amostra de água de um rio cercado por floresta">
+                    <h3>Abastecimento Humano</h3>
+                    <p>As nascentes são a origem da água potável que chega às nossas casas, hospitais e plantações.</p>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80" alt="Raios de sol passando pelas árvores de uma floresta ciliar protetora">
+                    <h3>Clima e Solo</h3>
+                    <p>As matas ciliares ao redor dos rios evitam a erosão do solo e ajudam a regular a temperatura local.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="monitoramento" class="api-section">
+            <h2>Monitoramento Ambiental</h2>
+            <p>Dados climáticos em tempo real de uma região de preservação ambiental (Bacia Hidrográfica demonstrativa):</p>
+            
+            <div id="loading-api" class="loading">Carregando dados ambientais...</div>
+            
+            <div id="api-card" class="api-card hidden" aria-live="polite">
+                <div class="api-item">
+                    <span class="api-label">Temperatura Local:</span>
+                    <span id="temp-val" class="api-value">--</span>
+                </div>
+                <div class="api-item">
+                    <span class="api-label">Velocidade do Vento:</span>
+                    <span id="wind-val" class="api-value">--</span>
+                </div>
+                <div class="api-item">
+                    <span class="api-label">Situação:</span>
+                    <span id="cond-val" class="api-value">--</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-ajudar" class="action-section">
+            <h2>Faça a sua parte hoje</h2>
+            <div class="action-grid">
+                <div class="action-item">
+                    <h4>1. Não descarte lixo</h4>
+                    <p>Evite poluir as margens. O lixo jogado na rua é levado pela chuva direto para os rios.</p>
+                </div>
+                <div class="action-item">
+                    <h4>2. Plantar árvores</h4>
+                    <p>A vegetação nativa protege o solo contra o assoreamento e mantém o fluxo das nascentes estável.</p>
+                </div>
+                <div class="action-item">
+                    <h4>3. Denuncie crimes ambientais</h4>
+                    <p>Descarte ilegal de esgoto ou desmatamento perto de fontes de água devem ser reportados às autoridades.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 EcoFontes. Projeto focado na conscientização ambiental e acessibilidade web.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
